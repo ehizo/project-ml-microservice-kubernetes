@@ -1,4 +1,4 @@
-[![ehizo](https://circleci.com/gh/ehizo/project-ml-microservice-kubernetes.svg?style=svg)](https://app.circleci.com/projects/project-dashboard/github/ehizo/)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ehizo/project-ml-microservice-kubernetes/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ehizo/project-ml-microservice-kubernetes/tree/master)
 
 ## Project Overview
 
