@@ -47,7 +47,7 @@ A pre-trained sklearn model that has been trained to predict housing prices in B
 - `./make_prediction.sh `
 
 
-## Files:
+## Files
 
 * app.py: The python flask app
 * Makefile: This file has make commands that allows for easy setup of a project
