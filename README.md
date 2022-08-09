@@ -6,15 +6,15 @@ A pre-trained sklearn model that has been trained to predict housing prices in B
 
 ### Instructions
 
-**1)** Clone the git repo:
+**(1)** Clone the git repo:
 
 - `git clone https://github.com/ehizo/project-ml-microservice-kubernetes.git`
 
-**2)** Change directory:
+**(2)** Change directory:
 
 - `cd project-ml-microservice-kubernetes`
 
-**3)** Create and activate virtual environment. You must already have python installed
+**(3)** Create and activate virtual environment. You must already have python installed
 
 - `make setup`
 
@@ -22,27 +22,27 @@ A pre-trained sklearn model that has been trained to predict housing prices in B
 
 - `make install`
 
-**5)** lint the project files:
+**(5)** lint the project files:
 
 - `make lint`
 
-**6)** build docker image and start the app in docker container:
+**(6)** build docker image and start the app in docker container:
 
 - `./run_docker.sh `
 
-**7)** Get a prediction from the app running in the Docker container:
+**(7)** Get a prediction from the app running in the Docker container:
 
 - `./make_prediction.sh `
 
-**8)** Upload docker image to Docker hub. Warning: remember to update the docker login and path
+**(8)** Upload docker image to Docker hub. Warning: remember to update the docker login and path
 
 - `./upload_docker.sh `
 
-**9)** Run the service in a kubernetes cluster. Warning: remember to update the dockerpath
+**(9)** Run the service in a kubernetes cluster. Warning: remember to update the dockerpath
 
 - `./run_kubernetes.sh `
 
-**10)** Get a prediction from the app running in the Kubernetes Cluster after port forwarding is successful:
+**(10)** Get a prediction from the app running in the Kubernetes Cluster after port forwarding is successful:
 
 - `./make_prediction.sh `
 
