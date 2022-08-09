@@ -4,12 +4,12 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath="ehizo79/microserveproj:v1"
+dockerpath="ehizo79/microserveproj"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
 kubectl run ehizoproject \
-    --image=ehizo79/microserveproj:v1 \
+    --image=$dockerpath \
     --port=80 --labels app=ehizoproject
 
 

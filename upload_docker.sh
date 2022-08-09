@@ -5,11 +5,11 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="ehizo79/microserveproj:v1"
+dockerpath="ehizo79/microserveproj"
 
 # Step 2:  
 # Authenticate & tag
-docker login
+docker login -u ehizo79
 docker tag ehizoproject $dockerpath
 echo "Docker ID and Image: $dockerpath"
 
