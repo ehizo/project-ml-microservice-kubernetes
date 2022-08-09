@@ -18,7 +18,7 @@ A pre-trained sklearn model that has been trained to predict housing prices in B
 
 - `make setup`
 
-**4)** install dependencies:
+**(4)** install dependencies:
 
 - `make install`
 
