@@ -6,54 +6,53 @@ A pre-trained sklearn model that has been trained to predict housing prices in B
 
 ### Instructions
 
-**1)** Fire up your favourite console & clone this repo somewhere:
+**1)** Clone the git repo:
 
-__`❍ git clone https://github.com/vahiwe/project-ml-microservice-kubernetes.git`__
+- `git clone https://github.com/ehizo/project-ml-microservice-kubernetes.git`
 
-**2)** Enter this directory:
+**2)** Change directory:
 
-__`❍ cd project-ml-microservice-kubernetes`__
+- `cd project-ml-microservice-kubernetes`
 
-**3)** Install [python](https://www.python.org/) if not already installed and run this command to create a virtual environment and activate it:
+**3)** Create and activate virtual environment. You must already have python installed
 
-__`❍ make setup`__
+- `make setup`
 
-**4)** Run this command to install the project dependencies:
+**4)** install dependencies:
 
-__`❍ make install`__
+- `make install`
 
-**5)** Run this command to lint the project files:
+**5)** lint the project files:
 
-__`❍ make lint`__
+- `make lint`
 
-**6)** Run this script to build a docker image for the app and start the app in a docker container:
+**6)** build docker image and start the app in docker container:
 
-__`❍ ./run_docker.sh `__
+- `./run_docker.sh `
 
-**7)** Run this script to get a prediction from the app running in the Docker container:
+**7)** Get a prediction from the app running in the Docker container:
 
-__`❍ ./make_prediction.sh `__
+- `./make_prediction.sh `
 
-**8)** Run this script to upload the docker image to your Docker hub account. Note you'll have to edit the script and change the Docker ID to yours:
+**8)** Upload docker image to Docker hub. Warning: remember to update the docker login and path
 
-__`❍ ./upload_docker.sh `__
+- `./upload_docker.sh `
 
-**9)** Run this script to run the service in a kubernetes cluster. You'll be making use of my image repo. You can edit the script and change to your image repo on Docker hub if you've built and pushed your image. This script will be run twice to activate the port forwarding. Give some minutes after first run so that the pod can be up and running before attempting port forwarding:
+**9)** Run the service in a kubernetes cluster. Warning: remember to update the dockerpath
 
-__`❍ ./run_kubernetes.sh `__
+- `./run_kubernetes.sh `
 
-**10)** Run this script to get a prediction from the app running in the Kubernetes Cluster after port forwarding is successful:
+**10)** Get a prediction from the app running in the Kubernetes Cluster after port forwarding is successful:
 
-__`❍ ./make_prediction.sh `__
+- `./make_prediction.sh `
 
-&nbsp;
 
-## :information_source: Files:
+## :Files:
 
-* app.py: This is the flask app that runs the service
+* app.py: The python flask app
 * Makefile: This file has make commands that allows for easy setup of a project
-* Dockerfile: This file has the setup for creating a Docker image for the microservice
-* run_docker.sh: This script creates a docker image from the Dockerfile, list the images and starts a container
-* make_prediction.sh: This script sends data for prediction using curl and prints the predicted value on the command line
-* upload_docker.sh: This script uploads a docker image to docker hub
-* run_kubernetes.sh: This script runs the docker image in a kubernetes cluster
+* Dockerfile: Contains the setup for creating a Docker image for the service
+* run_docker.sh: Creates a docker image from the Dockerfile, list the images and starts a container
+* make_prediction.sh: This script sends data for prediction and prints the predicted value on the command line
+* upload_docker.sh: Uploads the docker image to docker hub
+* run_kubernetes.sh: Runs the docker image in a kubernetes cluster
